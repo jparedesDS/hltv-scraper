@@ -1,0 +1,10 @@
+pandas
+numpy
+time
+bs4
+selenium
+selenium.webdriver.chrome.options
+selenium.webdriver.support.ui
+selenium.webdriver.common.by
+selenium.webdriver.support
+undetected_chromedriver
