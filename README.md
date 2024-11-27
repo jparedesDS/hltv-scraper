@@ -30,7 +30,7 @@ Execution Time: The script navigates through multiple pages and performs web scr
 Pop-up Blockers: Ensure there are no restrictions on pop-ups, as the script opens new tabs to collect data.
 Date Range: This script is configured to extract data for 2023. To change the date range, modify the line:
 ```
-driver.get('https://www.hltv.org/stats/teams?startDate=2023-01-01&endDate=2023-12-31')
+driver.get('https://www.hltv.org/stats/teams?startDate=2024-01-01&endDate=2024-11-25') #Example
 ```
 
 ## CSV Structure
