@@ -50,13 +50,7 @@ The generated CSV file will include the following columns:
 - pistolKills: Pistol kills.
 Additional stats dynamically scraped from the player's page.
 
-## Contributions
-To contribute to this project:
-1. Fork this repository.
-2. Create a new branch for your changes: git checkout -b feature-new-functionality.
-3. Submit a pull request with your improvements.
-
-## Problems
+## Problems detected
 You can avoid this problem by modifying code in the undetected_chromedriver\__init__.py.
 
 Go to line 789 (it was not the line in my case) and wrap the time.sleep(0.1) with try-except block here is how the final code look like
