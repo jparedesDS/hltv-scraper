@@ -3,10 +3,14 @@
 This project is a Python script that uses **Selenium**, **BeautifulSoup**, and **undetected-chromedriver** to scrape detailed team and player statistics from the [HLTV](https://www.hltv.org) website. The script gathers data on teams, their lineups, and individual player stats, saving the results in a CSV file.
 
 ## Features
-
-- Extracts information about teams, maps played, win rates, and lineup statistics.
-- Collects individual player stats such as impact, KAST, opening kill ratios, and specific kill types (rifles, snipers, SMGs, pistols, etc.).
-- Saves the data into a well-structured CSV file sorted by player names.
+1. I calculated a single performance score based on the key statistics: Winrate, K/D Ratio, Rating 2.1, and HLTVImpact. This score is normalised between 0 and 1, and weighted using the following weights:
+```
+- 30% for Winrate and K/D Ratio.
+- 20% for Rating 2.1 and HLTVImpact.
+```
+2. Extracts information about teams, maps played, win rates, and lineup statistics.
+3. Collects individual player stats such as impact, KAST, opening kill ratios, and specific kill types (rifles, snipers, SMGs, pistols, etc.).
+4. Saves the data into a well-structured CSV file sorted by player names.
 
 ## Requirements
 
