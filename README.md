@@ -36,19 +36,32 @@ driver.get('https://www.hltv.org/stats/teams?startDate=2024-08-27&endDate=2024-1
 ## CSV Structure
 The generated CSV file will include the following columns:
 
-- playerName: Player's name.
-- teamName: Team name and lineup year.
-- mapsPlayed: Number of maps played.
-- winrate: Win rate percentage.
-- hltvImpact: Impact rating.
-- KAST: KAST percentage (kills, assists, survived, traded).
-- openingKills: Number of opening kills.
-- OKratio: Opening kills ratio.
-- rifleKills: Rifle kills.
-- sniperKills: Sniper kills.
-- smgKills: SMG kills.
-- pistolKills: Pistol kills.
-Additional stats dynamically scraped from the player's page.
+- PLAYER: Player's name.
+- TEAM: Team name and lineup year.
+- MAPS_PLAYED: Number of maps played.
+- WINRATE: Win rate percentage.
+- HLTV-IMPACT: Impact rating.
+- KAST: KAST percentage (Kills, Assists, Survived, Traded).
+- OPENING_Kills: Number of opening kills.
+- OK_Ratio: Opening kills ratio.
+- RIFLE_Kills: Rifle kills.
+- SNIPER_Kills: Sniper kills.
+- SMG_Kills: SMG kills.
+- PISTOL_Kills: Pistol kills.
+- TOTAL_Kills: Total kills of all matchs.
+- %HEADSHOT: Percentage of headshots
+- TOTAL_Deaths: Total deaths of all matchs.
+- K/D_Ratio: KD percentage (Kills, Deaths)
+- DAMAGE/Round: 
+- GRANADE_DMG/Round:
+- MAPS_PLAYED:
+- ROUNDS_PLAYED:
+- KILLS/Round:
+- ASSISTS/Round:
+- DEATHS/Rounds:
+- SAVED BY TEAMMATE/Round:
+- SAVED TEAMMATES/Round:
+- RATING 2.1: Rating 2.1 of HLTV.
 
 ## Problems detected
 You can avoid this problem by modifying code in the undetected_chromedriver\__init__.py.
