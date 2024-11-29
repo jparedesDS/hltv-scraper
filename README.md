@@ -38,32 +38,33 @@ driver.get('https://www.hltv.org/stats/teams?startDate=2024-08-27&endDate=2024-1
 ## CSV Structure
 The generated CSV file will include the following columns:
 
-- PLAYER: Player's name.
-- TEAM: Team name and lineup year.
-- MAPS_PLAYED: Number of maps played.
-- WINRATE: Win rate percentage.
-- HLTV-IMPACT: Impact rating.
-- KAST: KAST percentage (Kills, Assists, Survived, Traded).
-- OPENING_Kills: Number of opening kills.
-- OK_Ratio: Opening kills ratio.
-- RIFLE_Kills: Rifle kills.
-- SNIPER_Kills: Sniper kills.
-- SMG_Kills: SMG kills.
-- PISTOL_Kills: Pistol kills.
-- TOTAL_Kills: Total kills of all matchs.
-- %HEADSHOT: Percentage of headshots
-- TOTAL_Deaths: Total deaths of all matchs.
-- K/D_Ratio: KD percentage (Kills, Deaths).
-- DAMAGE/Round: Damage per round.
-- GRENADE_DMG/Round: Damage of grenade per round.
-- MAPS_PLAYED: Maps played.
-- ROUNDS_PLAYED: Total rounds played.
-- KILLS/Round: Kills per round.
-- ASSISTS/Round: Assists per round.
-- DEATHS/Rounds: Deaths per round.
-- SAVED BY TEAMMATE/Round: Efficiency of saved by a teammate.
-- SAVED TEAMMATES/Round: Efficiency of saved by all the team.
-- RATING 2.1: Rating 2.1 of HLTV.
+- `SCORE_PERFORMANCE`: This score is normalised between 0 and 1, and weighted using the following weights (30% for winrate and K/D Ratio - 20% for Rating 2.1 and hltvImpact)
+- `PLAYER`: Player's name.
+- `TEAM`: Team name and lineup year.
+- `MAPS_PLAYED`: Number of maps played.
+- `WINRATE`: Win rate percentage.
+- `HLTV-IMPACT`: Impact rating.
+- `KAST`: KAST percentage (Kills, Assists, Survived, Traded).
+- `OPENING_Kills`: Number of opening kills.
+- `OK_Ratio`: Opening kills ratio.
+- `RIFLE_Kills`: Rifle kills.
+- `SNIPER_Kills`: Sniper kills.
+- `SMG_Kills`: SMG kills.
+- `PISTOL_Kills`: Pistol kills.
+- `TOTAL_Kills`: Total kills of all matchs.
+- `%HEADSHOT`: Percentage of headshots
+- `TOTAL_Deaths`: Total deaths of all matchs.
+- `K/D_Ratio`: KD percentage (Kills, Deaths).
+- `DAMAGE/Round`: Damage per round.
+- `GRENADE_DMG/Round`: Damage of grenade per round.
+- `MAPS_PLAYED`: Maps played.
+- `ROUNDS_PLAYED`: Total rounds played.
+- `KILLS/Round`: Kills per round.
+- `ASSISTS/Round`: Assists per round.
+- `DEATHS/Rounds`: Deaths per round.
+- `SAVED BY TEAMMATE/Round`: Efficiency of saved by a teammate.
+- `SAVED TEAMMATES/Round`: Efficiency of saved by all the team.
+- `RATING 2.1`: Rating 2.1 of HLTV.
 
 ## Problems detected
 You can avoid this problem by modifying code in the undetected_chromedriver\__init__.py.
