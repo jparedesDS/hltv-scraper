@@ -16,9 +16,11 @@ Make sure you have the following dependencies installed before running the scrip
 - Python packages:
   - `selenium`
   - `beautifulsoup4`
-  - `undetected-chromedriver`
+  - `undetected_chromedriver`
   - `pandas`
   - `numpy`
+  - `openpyxl`
+  - `sklearn`
 
 You can install the dependencies using a `requirements.txt` file:
 ```bash
@@ -51,22 +53,22 @@ The generated CSV file will include the following columns:
 - TOTAL_Kills: Total kills of all matchs.
 - %HEADSHOT: Percentage of headshots
 - TOTAL_Deaths: Total deaths of all matchs.
-- K/D_Ratio: KD percentage (Kills, Deaths)
-- DAMAGE/Round: 
-- GRANADE_DMG/Round:
-- MAPS_PLAYED:
-- ROUNDS_PLAYED:
-- KILLS/Round:
-- ASSISTS/Round:
-- DEATHS/Rounds:
-- SAVED BY TEAMMATE/Round:
-- SAVED TEAMMATES/Round:
+- K/D_Ratio: KD percentage (Kills, Deaths).
+- DAMAGE/Round: Damage per round.
+- GRENADE_DMG/Round: Damage of grenade per round.
+- MAPS_PLAYED: Maps played.
+- ROUNDS_PLAYED: Total rounds played.
+- KILLS/Round: Kills per round.
+- ASSISTS/Round: Assists per round.
+- DEATHS/Rounds: Deaths per round.
+- SAVED BY TEAMMATE/Round: Efficiency of saved by a teammate.
+- SAVED TEAMMATES/Round: Efficiency of saved by all the team.
 - RATING 2.1: Rating 2.1 of HLTV.
 
 ## Problems detected
 You can avoid this problem by modifying code in the undetected_chromedriver\__init__.py.
 
-Go to line 789 (it was not the line in my case) and wrap the time.sleep(0.1) with try-except block here is how the final code look like
+Go to line 789 and wrap the time.sleep(0.1) with try-except block here is how the final code look like
 ```
 try:
   time.sleep(0.1)
