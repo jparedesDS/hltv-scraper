@@ -6,8 +6,10 @@ This project is a Python script that uses **Selenium**, **BeautifulSoup**, and *
 1. I calculated a single performance score based on the key statistics: Winrate, K/D Ratio, Rating 2.1, and HLTVImpact. This calculation is found in the `SCORE_PERFORMANCE` column.
 ```
 This score is normalised between 0 and 1, and weighted using the following weights:
-- 30% for Winrate and K/D Ratio.
-- 20% for Rating 2.1 and HLTVImpact.
+- 30% for Winrate.
+- 30% for K/D Ratio.
+- 20% for Rating 2.1.
+- 20% for HLTVImpact.
 ```
 2. Extracts information about teams, maps played, win rates, and lineup statistics.
 3. Collects individual player stats such as impact, KAST, opening kill ratios, and specific kill types (rifles, snipers, SMGs, pistols, etc.).
